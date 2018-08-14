@@ -17,7 +17,7 @@
 
 ### Image
 
-![Headshot of Alex Lapp](https://avatars3.githubusercontent.com/u/25157151?s=460&v=4)
+![Headshot of Alex Lapp](https://avatars3.githubusercontent.com/u/25157151?s=300&v=4)
 
 ### External Links
 

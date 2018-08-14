@@ -15,7 +15,7 @@
 * Seafood
 * Social networks
 
-### Image
+### Headshot
 
 ![Headshot of Alex Lapp](https://avatars3.githubusercontent.com/u/25157151?s=300&v=4)
 

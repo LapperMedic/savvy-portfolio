@@ -1,19 +1,25 @@
-# Header 1
-## Header 2
+# Alex Lapp
+## My Video R&eacute;sum&eacute; (not really)
 
-*Italics*
+**Personal quote:** *"Know thyself."*
 
-**Bold**
+### What I like
 
-1. List 1
-1. List 2
-1. List 3
+1. Markup
+1. A well-built PC
+1. SavvyCoders
 
-* List 4
-* List 5
-* List 6
+### What I don't
+
+* Damp socks
+* Seafood
+* Social networks
+
+### Image
 
 ![The Google logo](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)
+
+### External Links
 
 * [GitHub](http://github.com/lappermedic)
 * [Reddit](http://reddit.com/u/lapper)

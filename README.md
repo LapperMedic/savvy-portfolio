@@ -17,7 +17,7 @@
 
 ### Image
 
-![The Google logo](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)
+![Headshot of Alex Lapp](https://avatars3.githubusercontent.com/u/25157151?s=460&v=4)
 
 ### External Links
 

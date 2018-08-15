@@ -1,0 +1,83 @@
+body {
+    background: #ccc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+h1 {
+    border-bottom: dotted 1px black;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    color: magenta;
+    background-color: powderblue;
+    letter-spacing: 0.8em;
+    font-family: full-width;
+}
+
+img.headshot {
+    padding: 3px;
+    border: solid 1px black;
+}
+
+img.icon {
+    width: 16px;
+    padding-right: 5px;
+}
+
+ol {
+    list-style: upper-roman;
+}
+
+ul {
+    list-style: square;
+}
+
+a:enabled {
+    color: #000;
+}
+
+a:visited {
+    color: #000;
+}
+
+.latex sub,
+.latex sup {
+    text-transform: uppercase;
+}
+
+.latex sub {
+    vertical-align: -0.5ex;
+    margin-left: -0.1667em;
+    margin-right: -0.125em;
+}
+
+.latex,
+.latex sub {
+    font-size: 1em;
+    font-family: "Computer Modern", "Times New Roman", serif;
+}
+
+.latex sup {
+    font-size: 0.85em;
+    vertical-align: 0.15em;
+    margin-left: -0.36em;
+    margin-right: -0.15em;
+}
+
+
+.header {
+    background: powderblue;
+}
+
+.likes {
+    background: powderblue;
+}
+
+.personal {
+    background: powderblue;
+}

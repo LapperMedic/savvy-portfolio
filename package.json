@@ -1,0 +1,23 @@
+{
+  "name": "AlexLapp",
+  "version": "1.0.0",
+  "description": "**Personal quote:** *\"Know thyself.\"*",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LapperMedic/savvy-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LapperMedic/savvy-portfolio/issues"
+  },
+  "homepage": "https://github.com/LapperMedic/savvy-portfolio#readme",
+  "devDependencies": {
+    "eslint": "^5.3.0"
+  }
+}

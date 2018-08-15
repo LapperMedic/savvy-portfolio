@@ -7,7 +7,7 @@
 
 1. Markup
 1. A well-built PC
-1. SavvyCoders
+1. LaTeX
 
 ### What I don't
 

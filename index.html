@@ -5,17 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>README</title>
+    <title>Alex Lapp's Portfolio Project</title>
     <style>
         body {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            position: absolute;
+            left: 33%;
+            background: #ccc;
         }
+
         h1 {
             border-bottom: dotted 1px black;
+            font-variant: small-caps;
         }
-        img {
+
+        img.headshot {
             padding: 3px;
             border: solid 1px black;
+        }
+
+        img.icon {
+            width: 16px;
+            padding-right: 5px;
+        }
+
+        ol {
+            list-style: upper-roman;
+        }
+
+        ul {
+            list-style: square;
+        }
+
+        a:enabled {
+            color: #000;
+        }
+
+        a:visited {
+            color: #000;
+        }
+
+        .latex sub,
+        .latex sup {
+            text-transform: uppercase;
+        }
+
+        .latex sub {
+            vertical-align: -0.5ex;
+            margin-left: -0.1667em;
+            margin-right: -0.125em;
+        }
+
+        .latex,
+        .latex sub {
+            font-size: 1em;
+            font-family: "Computer Modern", "Times New Roman", serif;
+        }
+
+        .latex sup {
+            font-size: 0.85em;
+            vertical-align: 0.15em;
+            margin-left: -0.36em;
+            margin-right: -0.15em;
         }
     </style>
 </head>
@@ -23,12 +74,12 @@
 <body>
     <h1>Alex Lapp</h1>
     <h2>My Video R&eacute;sum&eacute; (not really)</h2>
-    <b>Personal quote:</b> <i>"Know thyself."</i>
+    <p><b>Personal quote:</b> <i>"Know thyself."</i></p>
     <h3>What I like</h3>
     <ol>
         <li>Markup</li>
         <li>A well-built PC</li>
-        <li>SavvyCoders</li>
+        <li><span class="latex">L<sup>a</sup>T<sub>e</sub>X</span></li>
     </ol>
     <h3>What I don't</h3>
     <ul>
@@ -37,12 +88,13 @@
         <li>Social networks</li>
     </ul>
     <h3>Headshot</h3>
-    <img src="https://avatars3.githubusercontent.com/u/25157151?s=300&v=4" alt="Headshot of Alex Lapp" title="Headshot of Alex Lapp">
+    <img src="https://avatars3.githubusercontent.com/u/25157151?s=300&v=4" class="headshot" alt="Headshot of Alex Lapp" title="Headshot of Alex Lapp">
     <h3>External Links</h3>
     <ul>
-        <li><a href="http://github.com/lappermedic">GitHub</a></li>
-        <li><a href="http://reddit.com/u/lapper">Reddit</a></li>
-        <li><a href="http://twitter.com/lappermedic">Twitter</a></li>
+        <li><a href="http://github.com/lappermedic"><img src="https://assets-cdn.github.com/favicon.ico" class="icon">GitHub</a></li>
+        <li><a href="http://reddit.com/u/lapper"><img src="https://www.redditstatic.com/desktop2x/img/favicon/favicon-16x16.png"
+                    class="icon">Reddit</a></li>
+        <li><a href="http://twitter.com/lappermedic"><img src="https://abs.twimg.com/favicons/favicon.ico" class="icon">Twitter</a></li>
     </ul>
 </body>
 

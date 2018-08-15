@@ -8,15 +8,24 @@
     <title>Alex Lapp's Portfolio Project</title>
     <style>
         body {
+            background: #ccc;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             position: absolute;
-            left: 33%;
-            background: #ccc;
+            left: 50%;
+            transform: translate(-50%);
         }
 
         h1 {
             border-bottom: dotted 1px black;
-            font-variant: small-caps;
+            text-transform: uppercase;
+            text-shadow: -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+            color: magenta;
+            background-color: powderblue;
+            letter-spacing: 0.8em;
+            font-family: full-width;
         }
 
         img.headshot {
@@ -73,7 +82,7 @@
 
 <body>
     <h1>Alex Lapp</h1>
-    <h2>My Video R&eacute;sum&eacute; (not really)</h2>
+    <h2>My Video R&eacute;sum&eacute; (<a href="#">not really</a>)</h2>
     <p><b>Personal quote:</b> <i>"Know thyself."</i></p>
     <h3>What I like</h3>
     <ol>
@@ -91,6 +100,7 @@
     <img src="https://avatars3.githubusercontent.com/u/25157151?s=300&v=4" class="headshot" alt="Headshot of Alex Lapp" title="Headshot of Alex Lapp">
     <h3>External Links</h3>
     <ul>
+        <li><a href="mailto:alexrlapp@gmail.com"><img src="https://i.imgur.com/D77GQjP.png" class="icon">Email</a></li>
         <li><a href="http://github.com/lappermedic"><img src="https://assets-cdn.github.com/favicon.ico" class="icon">GitHub</a></li>
         <li><a href="http://reddit.com/u/lapper"><img src="https://www.redditstatic.com/desktop2x/img/favicon/favicon-16x16.png"
                     class="icon">Reddit</a></li>

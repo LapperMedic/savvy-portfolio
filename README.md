@@ -21,6 +21,7 @@
 
 ### External Links
 
+* [Email](mailto:alexrlapp@gmail.com)
 * [GitHub](http://github.com/lappermedic)
 * [Reddit](http://reddit.com/u/lapper)
 * [Twitter](http://twitter.com/lappermedic)

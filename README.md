@@ -1,5 +1,5 @@
 # Alex Lapp
-## My Video R&eacute;sum&eacute; (not really)
+## My Video R&eacute;sum&eacute; ([not really](https://www.dropbox.com/s/zhzqd3wdt29fxgp/CV%20of%20Alex%20Lapp.pdf?dl=0&m=)
 
 **Personal quote:** *"Know thyself."*
 

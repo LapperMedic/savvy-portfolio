@@ -70,18 +70,22 @@ a:visited {
 }
 
 
-.header {
+#header {
     background: powderblue;
 }
 
-.likes {
+#likes {
     background: powderblue;
 }
 
-.personal {
+#personal {
     background: powderblue;
 }
 
 #nav {
+    background: powderblue;
+}
+
+#projects {
     background: powderblue;
 }

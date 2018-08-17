@@ -1,9 +1,6 @@
 body {
     background: #ccc;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /*position: absolute;
-    left: 50%;
-    transform: translate(-50%);*/
     margin-left: auto;
     margin-right: auto;
     max-width: 450px;
@@ -20,6 +17,19 @@ h1 {
     color: magenta;
     background-color: powderblue;
     letter-spacing: 0.8em;
+    font-family: full-width;
+}
+
+h3 {
+    border-bottom: dotted 1px black;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    color: palevioletred;
+    background-color: powderblue;
+    letter-spacing: 0.4em;
     font-family: full-width;
 }
 
@@ -106,20 +116,7 @@ a:visited {
     background: powderblue;
 }
 
-h3 {
-    border-bottom: dotted 1px black;
-    text-transform: uppercase;
-    text-shadow: -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-    color: palevioletred;
-    background-color: powderblue;
-    letter-spacing: 0.4em;
-    font-family: full-width;
-}
-
-.date {
+.post>.date {
     display: block;
     margin-top: -40px;
     padding-bottom: 2px;

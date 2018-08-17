@@ -139,3 +139,11 @@ a:visited {
 .italic {
     font-style: italic;
 }
+
+li>a:hover {
+    text-transform: uppercase;
+}
+
+li>a:active {
+    font-style: italic;
+}

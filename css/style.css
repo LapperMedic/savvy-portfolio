@@ -95,6 +95,10 @@ ul {
     background-color: fuchsia;
 }
 
+#nav li:nth-child(2n) {
+    background-color: powderblue;
+}
+
 a:enabled {
     color: #000;
 }

@@ -87,6 +87,14 @@ ul {
     list-style: square;
 }
 
+#nav>ul {
+    background-color: fuchsia;
+}
+
+#nav li {
+    background-color: fuchsia;
+}
+
 a:enabled {
     color: #000;
 }

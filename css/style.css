@@ -20,6 +20,19 @@ h1 {
     font-family: full-width;
 }
 
+h2 {
+    text-transform: uppercase;
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    color: royalblue;
+    background-color: powderblue;
+    letter-spacing: 0.1em;
+    font-size: 1.3em;
+    font-family: full-width;
+}
+
 h3 {
     border-bottom: dotted 1px black;
     text-transform: uppercase;
@@ -30,6 +43,22 @@ h3 {
     color: palevioletred;
     background-color: powderblue;
     letter-spacing: 0.4em;
+    font-family: full-width;
+}
+
+.post>.date {
+    display: block;
+    margin-top: -40px;
+    padding-bottom: 2px;
+    text-align: right;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    color: palevioletred;
+    background-color: powderblue;
+    letter-spacing: 0.1em;
     font-family: full-width;
 }
 
@@ -66,30 +95,21 @@ a:visited {
     color: #000;
 }
 
-.latex sub,
-.latex sup {
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+li>a:hover {
+    font-style: italic;
+}
+
+li>a:active {
     text-transform: uppercase;
 }
-
-.latex sub {
-    vertical-align: -0.5ex;
-    margin-left: -0.1667em;
-    margin-right: -0.125em;
-}
-
-.latex,
-.latex sub {
-    font-size: 1em;
-    font-family: "Computer Modern", "Times New Roman", serif;
-}
-
-.latex sup {
-    font-size: 0.85em;
-    vertical-align: 0.15em;
-    margin-left: -0.36em;
-    margin-right: -0.15em;
-}
-
 
 #header {
     background: powderblue;
@@ -116,34 +136,27 @@ a:visited {
     background: powderblue;
 }
 
-.post>.date {
-    display: block;
-    margin-top: -40px;
-    padding-bottom: 2px;
-    text-align: right;
-    text-transform: uppercase;
-    text-shadow: -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-    color: palevioletred;
-    background-color: powderblue;
-    letter-spacing: 0.1em;
-    font-family: full-width;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.italic {
-    font-style: italic;
-}
-
-li>a:hover {
+/* LaTeX */
+.latex sub,
+.latex sup {
     text-transform: uppercase;
 }
 
-li>a:active {
-    font-style: italic;
+.latex sub {
+    vertical-align: -0.5ex;
+    margin-left: -0.1667em;
+    margin-right: -0.125em;
+}
+
+.latex,
+.latex sub {
+    font-size: 1em;
+    font-family: "Computer Modern", "Times New Roman", serif;
+}
+
+.latex sup {
+    font-size: 0.85em;
+    vertical-align: 0.15em;
+    margin-left: -0.36em;
+    margin-right: -0.15em;
 }

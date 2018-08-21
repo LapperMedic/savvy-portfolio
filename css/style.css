@@ -7,43 +7,36 @@ body {
     min-width: 300px;
 }
 
-h1 {
-    border-bottom: dotted 1px black;
+#header {
+    margin-top: 50px;
+}
+
+h1, h2, h3 {
     text-transform: uppercase;
     text-shadow: -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
-    color: magenta;
     background-color: powderblue;
-    letter-spacing: 0.8em;
     font-family: full-width;
 }
 
+h1 {
+    border-bottom: dotted 1px black;
+    color: magenta;
+    letter-spacing: 0.8em;
+}
+
 h2 {
-    text-transform: uppercase;
-    text-shadow: -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
     color: royalblue;
-    background-color: powderblue;
     letter-spacing: 0.1em;
     font-size: 1.3em;
-    font-family: full-width;
 }
 
 h3 {
     border-bottom: dotted 1px black;
-    text-transform: uppercase;
-    text-shadow: -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
     color: palevioletred;
-    background-color: powderblue;
     letter-spacing: 0.4em;
-    font-family: full-width;
 }
 
 .post>.date {
@@ -87,8 +80,34 @@ ul {
     list-style: square;
 }
 
+#nav {
+    position: fixed;
+    top: 0px;
+    width: 444px;
+}
+
 #nav>ul {
-    background-color: fuchsia;
+    padding-left: 130px;
+    background-color: powderblue;
+}
+
+#nav>ul>li {
+    display: inline;
+    position: relative;
+}
+
+#nav a+ul {
+    display: none;
+    position: absolute;
+    width: 80%;
+    top: 19px;
+    left: -35px;
+    list-style: none;
+}
+
+#nav a+ul:hover,
+#nav a:hover+ul {
+    display: block;
 }
 
 #nav li {

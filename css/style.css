@@ -1,4 +1,11 @@
 body {
+    display: grid;
+    grid-template-areas:
+        "nav"
+        "header"
+        "likes"
+        "personal";
+    grid-template-rows: min-content min-content auto auto;
     background: #ccc;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: auto;
@@ -8,7 +15,8 @@ body {
 }
 
 #header {
-    margin-top: 50px;
+    padding-top: 0;
+    background: powderblue;
 }
 
 h1, h2, h3 {
@@ -81,14 +89,22 @@ ul {
 }
 
 #nav {
-    position: fixed;
+    position: sticky;
     top: 0px;
-    width: 444px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: royalblue;
 }
 
 #nav>ul {
-    padding-left: 130px;
-    background-color: powderblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: full-width;
+    font-size: 1.3em;
+    letter-spacing: 0.2em;
 }
 
 #nav>ul>li {
@@ -99,15 +115,17 @@ ul {
 #nav a+ul {
     display: none;
     position: absolute;
-    width: 80%;
-    top: 19px;
-    left: -35px;
+    top: 25px;
+    left: -25px;
     list-style: none;
+    word-wrap: none;
+    word-break: keep-all;
 }
 
 #nav a+ul:hover,
 #nav a:hover+ul {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 #nav li {
@@ -134,28 +152,11 @@ a:visited {
     font-style: italic;
 }
 
-li>a:hover {
-    font-style: italic;
-}
-
-li>a:active {
-    text-transform: uppercase;
-}
-
-#header {
-    background: powderblue;
-    padding-top: 0px;
-}
-
 #likes {
     background: powderblue;
 }
 
 #personal {
-    background: powderblue;
-}
-
-#nav {
     background: powderblue;
 }
 

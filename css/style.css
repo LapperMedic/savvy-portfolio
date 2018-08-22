@@ -1,10 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+
 body {
     display: grid;
     grid-template-areas:
         "nav"
         "header"
-        "likes"
-        "personal";
+        "body"
+        "footer";
     grid-template-rows: min-content min-content auto auto;
     background: #ccc;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -26,7 +29,7 @@ h1, h2, h3, label {
     -1px 1px 0 #000,
     1px 1px 0 #000;
     background-color: powderblue;
-    font-family: full-width;
+    font-family: "IBM Plex Mono", monospace;
 }
 
 h1 {
@@ -72,17 +75,15 @@ div {
     padding: 3px;
 }
 
-img.headshot {
-    padding: 3px;
-    border: solid 1px black;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.headshot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-img.icon {
-    width: 16px;
-    padding-right: 5px;
+.headshot>img {
+    padding: 3px;
+    border: solid 1px black;
 }
 
 ol {
@@ -98,7 +99,9 @@ ul {
     top: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
+    margin-bottom: -20px;
     background-color: royalblue;
+    font-family: "IBM Plex Mono", monospace;
 }
 
 #nav>ul {
@@ -107,7 +110,6 @@ ul {
     align-items: center;
     padding: 0;
     text-transform: uppercase;
-    font-family: full-width;
     font-size: 1.3em;
     letter-spacing: 0.2em;
 }
@@ -188,29 +190,4 @@ a:visited {
 
 #contact {
     background: powderblue;
-}
-
-/* LaTeX */
-.latex sub,
-.latex sup {
-    text-transform: uppercase;
-}
-
-.latex sub {
-    vertical-align: -0.5ex;
-    margin-left: -0.1667em;
-    margin-right: -0.125em;
-}
-
-.latex,
-.latex sub {
-    font-size: 1em;
-    font-family: "Computer Modern", "Times New Roman", serif;
-}
-
-.latex sup {
-    font-size: 0.85em;
-    vertical-align: 0.15em;
-    margin-left: -0.36em;
-    margin-right: -0.15em;
 }

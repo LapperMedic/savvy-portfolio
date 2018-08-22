@@ -8,8 +8,8 @@ body {
         "header"
         "body"
         "footer";
-    grid-template-rows: min-content min-content auto auto;
-    background: #ccc;
+    grid-template-rows: min-content min-content auto min-content;
+    background: repeating-linear-gradient(90deg, hotpink 0%,royalblue 100%);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: auto;
     margin-right: auto;
@@ -17,10 +17,6 @@ body {
     min-width: 300px;
 }
 
-#header {
-    padding-top: 0;
-    background: powderblue;
-}
 
 h1, h2, h3, label {
     text-transform: uppercase;
@@ -95,6 +91,7 @@ ul {
 }
 
 #nav {
+    grid-area: nav;
     position: sticky;
     top: 0px;
     padding-top: 0px;
@@ -143,6 +140,34 @@ ul {
     background-color: powderblue;
 }
 
+#header {
+    grid-area: header;
+    padding-top: 0;
+    background: powderblue;
+}
+
+#body {
+    grid-area: body;
+    background: powderblue;
+}
+
+#footer {
+    grid-area: footer;
+    background: powderblue;
+}
+
+#projects {
+    background: powderblue;
+}
+
+#blog {
+    background: powderblue;
+}
+
+#contact {
+    background: powderblue;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -172,22 +197,36 @@ a:visited {
     font-style: italic;
 }
 
-#likes {
-    background: powderblue;
-}
+@media screen and (min-width: 800px) {
+    body {
+        grid-template-areas:
+        "nav header"
+        "nav body"
+        "nav footer";
+        grid-template-rows: min-content auto min-content;
+        grid-template-columns: 10vw auto;
+    }
 
-#personal {
-    background: powderblue;
-}
+    #nav {
+        margin: 0;
+    }
 
-#projects {
-    background: powderblue;
-}
+    #nav>ul {
+        flex-direction: column;
+    }
 
-#blog {
-    background: powderblue;
-}
+    #nav a+ul {
+        top: 0;
+        left: 100px;
+    }
 
-#contact {
-    background: powderblue;
+    #nav li>ul>li {
+        width: 100px;
+    }
+
+    #nav a+ul:hover,
+    #nav a:hover+ul {
+        display: flex;
+        flex-direction: row;
+    }
 }

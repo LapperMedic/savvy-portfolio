@@ -97,7 +97,7 @@ ul {
     padding-top: 0px;
     padding-bottom: 0px;
     margin-bottom: -20px;
-    background-color: royalblue;
+    background: repeating-linear-gradient(0deg, hotpink 0%,royalblue 100%);;
     font-family: "IBM Plex Mono", monospace;
 }
 

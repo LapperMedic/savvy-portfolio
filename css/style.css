@@ -213,7 +213,6 @@ a:visited {
 
     #nav>ul {
         flex-direction: column;
-        text-overflow: ellipsis;
     }
 
     #nav a+ul {

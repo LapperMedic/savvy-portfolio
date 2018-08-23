@@ -13,7 +13,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: auto;
     margin-right: auto;
-    max-width: 450px;
+    max-width: 700px;
     min-width: 300px;
 }
 
@@ -204,7 +204,7 @@ a:visited {
         "nav body"
         "nav footer";
         grid-template-rows: min-content auto min-content;
-        grid-template-columns: 10vw auto;
+        grid-template-columns: 20% auto;
     }
 
     #nav {
@@ -213,6 +213,7 @@ a:visited {
 
     #nav>ul {
         flex-direction: column;
+        text-overflow: ellipsis;
     }
 
     #nav a+ul {

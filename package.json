@@ -4,6 +4,7 @@
   "description": "**Personal quote:** *\"Know thyself.\"*",
   "main": "index.js",
   "scripts": {
+    "start": "parcel build index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

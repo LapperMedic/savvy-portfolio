@@ -5,7 +5,7 @@ var greeting = function greeting(){
         greeting();
     }
     else{
-        alert('Hello, ' + myName + '!');
+        document.querySelectorAll('h2')[0].innerHTML = `¡Bienvenidos, ${myName}!`;
     }
 };
 
@@ -25,19 +25,32 @@ var fibonacci = function fibonacci(last){
     console.log(final);
 };
 
-var exampleArray = [ 'String', 1, true, undefined, null ];
-
-var bill = {
-    'type': 'restaurant',
-    'items': 5,
-    'total': 67.94,
-    'tax': 1.12,
-    'tip': 1.2,
-    'paid': true
-};
-
 var homework = function homework(){
-    console.log(exampleArray, bill);
+    var string = 'String';
+    var number = 1;
+    var boolean = true;
+    var undef;
+    var nul = null;
+    var exampleArray = [ string, number, boolean, undef, nul ];
+
+    var bill = {
+        'type': 'restaurant',
+        'total': 67.94,
+        'paid': true,
+        'location': undefined,
+        'refund': null
+    };
+
+    var car = {
+        'make': 'Pontiac',
+        'model': 'G6',
+        'year': 2008,
+        'color': 'grey',
+        'plates': 'LAPPER',
+        'miles': '141000'
+    };
+
+    console.log(exampleArray, bill, car);
 };
 
 greeting();

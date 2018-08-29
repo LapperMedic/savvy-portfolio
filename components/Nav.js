@@ -1,4 +1,5 @@
 export default `
+<div id="nav">
 <ul>
 <li>
     <a href="../">Home</a>
@@ -18,4 +19,5 @@ export default `
     <a href="/contact">Contact</a>
 </li>
 </ul>
+</div>
 `;

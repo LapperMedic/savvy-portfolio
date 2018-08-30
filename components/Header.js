@@ -1,7 +1,7 @@
 export default `
 <div id="header">
 <h1>Alex Lapp</h1>
-        <h2>My Video R&eacute;sum&eacute;
+        <h2 id="greeting">My Video R&eacute;sum&eacute;
             <small>(<a href="https://www.dropbox.com/s/zhzqd3wdt29fxgp/CV%20of%20Alex%20Lapp.pdf?dl=0&amp;m=">not really</a>)</small>
         </h2>
         <p class="quote">

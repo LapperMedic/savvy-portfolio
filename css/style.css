@@ -1,16 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
-
 body {
-    background: repeating-linear-gradient(90deg, hotpink 0%,royalblue 100%);
+    background: repeating-linear-gradient(90deg, hotpink 0%, royalblue 100%);
 }
 
 #root {
     display: grid;
-    grid-template-areas:
-        "nav"
-        "header"
-        "body"
-        "footer";
+    grid-template-areas: "nav" "header" "body" "footer";
     grid-template-rows: min-content min-content auto min-content;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: auto;
@@ -22,10 +17,7 @@ body {
 
 h1, h2, h3, label {
     text-transform: uppercase;
-    text-shadow: -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     background-color: powderblue;
     font-family: "IBM Plex Mono", monospace;
 }
@@ -59,10 +51,7 @@ label {
     padding-bottom: 2px;
     text-align: right;
     text-transform: uppercase;
-    text-shadow: -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     color: palevioletred;
     background-color: powderblue;
     letter-spacing: 0.1em;
@@ -100,7 +89,7 @@ ul {
     padding-top: 0px;
     padding-bottom: 0px;
     margin-bottom: -20px;
-    background: repeating-linear-gradient(0deg, hotpink 0%,royalblue 100%);;
+    background: repeating-linear-gradient(0deg, hotpink 0%, royalblue 100%);
     font-family: "IBM Plex Mono", monospace;
 }
 
@@ -129,8 +118,7 @@ ul {
     word-break: keep-all;
 }
 
-#nav a+ul:hover,
-#nav a:hover+ul {
+#nav a+ul:hover, #nav a:hover+ul {
     display: flex;
     flex-direction: column;
 }
@@ -191,34 +179,25 @@ a:visited {
 
 @media screen and (min-width: 675px) {
     #root {
-        grid-template-areas:
-        "nav header"
-        "nav body"
-        "nav footer";
+        grid-template-areas: "nav header" "nav body" "nav footer";
         grid-template-rows: min-content auto min-content;
         grid-template-columns: 20% auto;
         min-height: 100vh;
     }
-
     #nav {
         margin: 0;
     }
-
     #nav>ul {
         flex-direction: column;
     }
-
     #nav a+ul {
         top: 0;
         left: 100px;
     }
-
     #nav li>ul>li {
         width: 100px;
     }
-
-    #nav a+ul:hover,
-    #nav a:hover+ul {
+    #nav a+ul:hover, #nav a:hover+ul {
         display: flex;
         flex-direction: row;
     }

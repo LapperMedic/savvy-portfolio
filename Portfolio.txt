@@ -1,6 +1,11 @@
 http://www.chromoscope.net
 
 GAMMA-RAY (10^20+ Hz)
+	Gamma rays are the highest-energy radiation in the universe, and we thankfully seldom experience their effects.
+	
+	High in Earth's atmosphere, cosmic rays from distant stars and galaxies cause high-energy particle interactions and emit gamma rays. As slow as this process is, it overwhelms terrestrial gamma ray detectors compared to what the universe can produce.
+	
+	Supernovae, black holes, and blazars can emit gamma-ray bursts (GRB) that travel incredible distances. Though they only do so for an instant and are quite rare, a single GRB originating from within the Milky Way that crossed Earth's path could neutralize our ozone layer, sterilizing our planet in the blink of an eye.
 
 X-RAY (10^16 Hz - 10^19 Hz)
 	X-rays are high-energy radiation, some that you won't find emitted by many sources on Earth.

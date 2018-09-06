@@ -1,0 +1,47 @@
+http://www.chromoscope.net
+
+GAMMA-RAY (10^20+ Hz)
+
+X-RAY (10^16 Hz - 10^19 Hz)
+	X-rays are high-energy radiation, some that you won't find emitted by many sources on Earth.
+	
+	While the name brings to mind the medical and security technologies, the few x-rays visible from Earth exist largely in the high-energy particles that comprise solar wind. X-rays that manage to pass through our magnetosphere near the poles are visible to us as beautiful aurorae, better known as the Northern and Southern Lights.
+	
+	In the wider universe, x-rays are emitted during violent interactions, such as supernovas, feeding black holes, and collisions between large astronomic bodies.
+
+ULTRAVIOLET (10^14 Hz - 10^16 Hz)
+	While our sun constantly bombards our planet with ultraviolet radiation, we can see different effects from the varying wavelengths.
+	
+	UVA radiation represents 95% of ultraviolet waves that reach Earth's surface, though just 3% of the sun's light as seen from the surface is ultraviolet. Black lights emit UVA radiation, though their purple glow is the small portion of visible light emitted, not UV itself.
+	
+	UVB radiation comprises the remaining 5% of the sun's UV rays that reach Earth's surface, as this radiation is handily blocked by the ozone layer as well as clouds and other atmospheric conditions.
+	
+	UVC radiation is completely absorbed by our ozone layer and does not reach the surface, causing the planet to appear featureless and opaque from this perspective.
+	
+	But it's not just our sun that emits UV waves; every other star does as well, so they are also visible to our newly-minted UV eyes.
+
+VISIBLE LIGHT (10^14 Hz)
+	Visible light represents an extremely narrow band of the EM spectrum despite comprising everything humans can see.
+	
+	But what if we could see the Earth with different eyes? What would we see if our eyes were sensitive to infrared light, or radio waves, or x-rays? Let's find out!
+
+INFRARED (10^11 Hz - 10^14 Hz)
+	Infrared waves are radiation created by temperature. When we think of something as "red-hot," we are referring to the radiated heat of an object surpassing infrared into visible light.
+	
+	Everything on Earth emits some degree of infrared light, and the hotter something is, the brighter it is. Night vision and thermal imagery rely on infrared radiation to shine even when visible light doesn't. From our perspective on high, water vapor and clouds block significant portions of infrared, allowing us to see the turbulent nature of Earth's atmosphere.
+	
+	Stars, with temperatures stretching into the thousands of Kelvin, shine as brightly in infrared as they do in visible light. With the added benefit of penetrating denser areas of space, infrared allows us to see distant stars that would otherwise be lost to us.
+
+MICROWAVE (10^8 Hz - 10^11 Hz)
+	Microwaves have significant overlap with radio waves, but the most noticeable difference is the background of space.
+	
+	Microwave signals are largely contained within your microwave oven, but they are also used to transmit internet data, television signals, and telephone communications, all via microwave sattelite.
+	
+	The universe at large is made plainly visible through the cosmic microwave background (CMB), radiation left over from the Big Bang that exists throughout the entire universe. The bright stripe visible is the microwave radiation emitted by our galaxy.
+
+RADIO WAVE (10^1 Hz - 10^11 Hz)
+	At the low end of the EM spectrum, radio waves light up both the Earth and sky.
+	
+	Radio waves are in frequent use on Earth, from radio and television broadcast to GPS signals and satellite communication. Some radio waves are reflected by the earth's atmosphere, but many more escape in all directions, creating a sphere of radio influence that extends away from our planet for over 100 lightyears.
+	
+	But these signals are not just domestic. Shifting magnetic fields also create radio waves, causing stars, planets, and especially pulsars and black holes to emit radio waves that are visible to us from great distances.

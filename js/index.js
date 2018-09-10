@@ -7,16 +7,20 @@ import Footer from '../components/Footer';
 var State = {
     'active': 'home',
     'home': {
-        'title': 'Alex Lapp'
+        'title': 'Alex Lapp',
+        'links': [ 'blog', 'projects', 'contact' ]
     },
     'blog': {
-        'title': 'Blog'
+        'title': 'Blog',
+        'links': [ 'home', 'projects', 'contact' ]
     },
     'projects': {
-        'title': 'Projects'
+        'title': 'Projects',
+        'links': [ 'home', 'blog', 'contact' ]
     },
     'contact': {
-        'title': 'Contact'
+        'title': 'Contact',
+        'links': [ 'home', 'blog', 'projects' ]
     }
 };
 
@@ -25,7 +29,7 @@ var root = document.querySelector('#root');
 function render(state){
     var links;
 
-    root.innerHTML = `${Nav()} ${Header(state[state.active])} ${Body()} ${Footer()}`;
+    root.innerHTML = `${Nav(state[state.active])} ${Header(state[state.active])} ${Body()} ${Footer()}`;
     links = document.querySelectorAll('#nav a'); // An array containing the navbar links
     for(let i = 0; i < links.length; i++){
         links[i].addEventListener('click', handleNav); // Add an event listener to each navbar link

@@ -1,23 +1,15 @@
-export default function Nav(){
+export default function Nav(state){
     return `
         <div id="nav">
             <ul>
             <li>
-                <a href="../">Home</a>
+                <a href="/${state.links[0]}">${state.links[0]}</a>
             </li>
             <li>
-                <a href="/projects">Projects</a>
-                <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                </ul>
+                <a href="/${state.links[1]}">${state.links[1]}</a>
             </li>
             <li>
-                <a href="/blog">Blog</a>
-            </li>
-            <li>
-                <a href="/contact">Contact</a>
+                <a href="/${state.links[2]}">${state.links[2]}</a>
             </li>
             </ul>
         </div>

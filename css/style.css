@@ -12,7 +12,7 @@ body {
     margin-right: auto;
     max-width: 675px;
     min-width: 300px;
-    min-height: 100vh;
+    min-height: 99vh;
 }
 
 h1, h2, h3, label {
@@ -182,7 +182,7 @@ a:visited {
         grid-template-areas: "nav header" "nav body" "nav footer";
         grid-template-rows: min-content auto min-content;
         grid-template-columns: 20% auto;
-        min-height: 100vh;
+        min-height: 99vh;
     }
     #nav {
         margin: 0;

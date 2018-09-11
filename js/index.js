@@ -29,7 +29,7 @@ var root = document.querySelector('#root');
 function render(state){
     var links;
 
-    root.innerHTML = `${Nav(state[state.active])} ${Header(state[state.active])} ${Body()} ${Footer()}`;
+    root.innerHTML = `${Nav(state[state.active])} ${Header(state[state.active])} ${Body(state[state.active])} ${Footer()}`;
     links = document.querySelectorAll('#nav a'); // An array containing the navbar links
     for(let i = 0; i < links.length; i++){
         links[i].addEventListener('click', handleNav); // Add an event listener to each navbar link

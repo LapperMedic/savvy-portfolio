@@ -2,27 +2,8 @@ import Nav from '../components/Nav';
 import Header from '../components/Header';
 import Body from '../components/Body';
 import Footer from '../components/Footer';
+import * as State from '../store';
 // import Greeting from './script.js';
-
-var State = {
-    'active': 'home',
-    'home': {
-        'title': 'Alex Lapp',
-        'links': [ 'blog', 'projects', 'contact' ]
-    },
-    'blog': {
-        'title': 'Blog',
-        'links': [ 'home', 'projects', 'contact' ]
-    },
-    'projects': {
-        'title': 'Projects',
-        'links': [ 'home', 'blog', 'contact' ]
-    },
-    'contact': {
-        'title': 'Contact',
-        'links': [ 'home', 'blog', 'projects' ]
-    }
-};
 
 var root = document.querySelector('#root');
 
@@ -37,7 +18,7 @@ function render(state){
 }
 
 function handleNav(event){
-    var newState = State; // Catch the state we currently have
+    var newState = Object.assign({}, State); // Catch the state we currently have
 
     event.preventDefault(); // Don't navigate to a new page
     newState.active = event.target.textContent.toLowerCase(); // Change the state to the text within the navbar link

@@ -23,6 +23,7 @@
     "parcel": "^1.9.7"
   },
   "dependencies": {
+    "navigo": "^7.1.2",
     "script": "^0.1.4"
   }
 }

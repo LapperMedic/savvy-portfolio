@@ -1,4 +1,5 @@
-export default `
+export default function Projects(){
+    return `
     <h3>Projects</h3>
     <ol>
         <li>Class Showcase</li>
@@ -6,3 +7,4 @@ export default `
         <li>Web Store Hack-A-Thon</li>
     </ol>
 `;
+}

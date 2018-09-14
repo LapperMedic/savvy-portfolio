@@ -1,4 +1,5 @@
-export default `
+export default function Home(){
+    return `
     <h3>What I like</h3>
         <ol>
             <li>Markup</li>
@@ -22,3 +23,4 @@ export default `
             <img src="https://avatars3.githubusercontent.com/u/25157151?s=300&amp;v=4" alt="Headshot of Alex Lapp" title="Headshot of Alex Lapp">
         </div>
 `;
+}

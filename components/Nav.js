@@ -1,15 +1,15 @@
 export default function Nav(state){
     var navLinks = '<div id="nav"><ul>'; // Begin the navbar
 
-    for(let i = 0; i < state.links.length; i++){ // For each index in the navbar links array
-        if(state.links[i] !== 'home'){ // Make a li that links to it
-            navLinks += `<li><a href="/${state.links[i]}" data-navigo>${state.links[i]}</a></li>`;
+    state.links.map((link) => { // For each link in the array
+        if(link !== 'home'){
+            navLinks += `<li><a href="/${link}" data-navigo>${link}</a></li>`;  // Make a li that links to it
         }
         
         else{
-            navLinks += `<li><a href="/" data-navigo>${state.links[i]}</a></li>`;
+            navLinks += `<li><a href="/" data-navigo>${link}</a></li>`; // Unless it's 'home', then nav to root
         }
-    }
+    }).join(' ');
 
     navLinks += '</ul></div>'; // End the navbar
     

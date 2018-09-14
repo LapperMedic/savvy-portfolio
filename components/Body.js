@@ -1,5 +1,7 @@
 import * as Pages from './pages';
 
 export default function Body(state){
-    return `<div id="body">${Pages[state.content]}</body>`;
+    const page = state[state.active];
+
+    return `<div id="body">${Pages[page.content](state.posts)}</body>`;
 }

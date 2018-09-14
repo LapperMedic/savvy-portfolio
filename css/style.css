@@ -22,10 +22,17 @@ h1, h2, h3, label {
     font-family: "IBM Plex Mono", monospace;
 }
 
-h1 {
+#header h1 {
     border-bottom: dotted 1px black;
     color: magenta;
     letter-spacing: 0.8em;
+}
+
+#body h1 {
+    border-bottom: dotted 1px black;
+    color: magenta;
+    letter-spacing: 0.1em;
+    font-size: 1.3rem;
 }
 
 h2 {

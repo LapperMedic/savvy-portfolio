@@ -4,47 +4,23 @@ import Nav from '../components/Nav';
 import Header from '../components/Header';
 import Body from '../components/Body';
 import Footer from '../components/Footer';
-import * as State from '../store';
+import Greeter from '../components/Greeter';
+import store from '../store/store';
 
 var root = document.querySelector('#root');
 var router = new Navigo(window.location.origin);
-var store;
-
-class Store{
-    constructor(state){
-        this.state = Object.assign({}, state);
-        this.listeners = [];
-    }
-
-    dispatch(reducer){
-        this.state = reducer(this.state);
-        this.listeners.forEach((listener) => listener());
-    }
-
-    getState(){
-        return this.state;
-    }
-
-    addListeners(listener){
-        this.listeners.push(listener);
-    }
-}
-
-store = new Store(State);
+var greeter = new Greeter(store.dispatch.bind(store));
 
 function render(){
     var state = store.getState();
 
     root.innerHTML = `${Nav(state[state.active])} ${Header(state[state.active])} ${Body(state)} ${Footer()}`;
+    greeter.render(root);
     router.updatePageLinks();
 }
 
 function handleNav(activePage){
-    store.dispatch((state) => {
-        state.active = activePage;
-        
-        return state;
-    });
+    store.dispatch((state) => Object.assign(state, { 'active': activePage }));
 }
 
 router
@@ -55,11 +31,7 @@ router
 Axios
     .get('https://jsonplaceholder.typicode.com/posts')
     .then((response) => {
-        store.dispatch((state) => {
-            state.posts = response.data;
-            
-            return state;
-        });
+        store.dispatch((state) => Object.assign(state, { 'posts': response.data }));
     });
 
 store.addListeners(render);

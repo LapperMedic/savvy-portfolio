@@ -1,6 +1,4 @@
-import Weather from './Weather';
-
-export default function Footer(state){
+export default function Footer(){
     return `
         <div id="footer">
             <h3>External Links</h3>
@@ -10,20 +8,18 @@ export default function Footer(state){
                         <i class="fas fa-envelope" style="color: red;">&nbsp;</i>Email</a>
                 </li>
                 <li>
-                    <a href="http://github.com/lappermedic">
+                    <a href="http://github.com/lappermedic" target="_blank">
                         <i class="fab fa-github">&nbsp;</i>GitHub</a>
                 </li>
                 <li>
-                    <a href="http://reddit.com/u/lapper">
+                    <a href="http://reddit.com/u/lapper" target="_blank">
                         <i class="fab fa-reddit" style="color:orangered;">&nbsp;</i>Reddit</a>
                 </li>
                 <li>
-                    <a href="http://twitter.com/lappermedic">
+                    <a href="http://twitter.com/lappermedic" target="_blank">
                         <i class="fab fa-twitter" style="color: #1DA1F2;">&nbsp;</i>Twitter</a>
                 </li>
             </ul>
-            <h3>Weather</h3>
-            ${Weather(state.weather)}
         </div>
 `;
 }

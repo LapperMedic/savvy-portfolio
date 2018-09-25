@@ -14,7 +14,7 @@ var router = new Navigo(window.location.origin);
 function render(){
     var state = store.getState();
 
-    root.innerHTML = `${Nav(state[state.active])} ${Header(state[state.active])} ${Body(state)} ${Footer(state)}`;
+    root.innerHTML = `${Nav(state[state.active])} ${Header(state[state.active])} ${Body(state)} ${Footer()}`;
     // greeter.render(root);
     router.updatePageLinks();
 }
@@ -47,7 +47,7 @@ Axios
 Axios
     .get('https://api.github.com/users/lappermedic/repos', {
         'headers': {
-            'Authorization': 'token 37776d59345dee2e5bdeb4d0db86097c135358ca'
+            'Authorization': `token ${process.env.GITHUB_API_KEY}`
         }
     })
     .then((response) => {

@@ -1,10 +1,25 @@
-export default function Projects(){
+import {
+    capitalize,
+    kebabCase
+} from 'lodash';
+
+function Repo(repo){
     return `
-    <h3>Projects</h3>
-    <ol>
-        <li>Class Showcase</li>
-        <li>Choose Your Own Adventure</li>
-        <li>Web Store Hack-A-Thon</li>
-    </ol>
-`;
+        <li>
+            <a href="${repo.html_url}">
+                ${kebabCase(repo.name).split('-').map(capitalize).join(' ')}
+            </a>
+        </li>
+    `;
+}
+
+export default function Projects(state){
+    var repos = state.repos.map(Repo).join('');
+
+    return `
+        <h3>Projects</h3>
+        <ul>
+            ${repos}
+        </ul>
+    `;
 }

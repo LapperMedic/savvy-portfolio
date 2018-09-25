@@ -1,5 +1,5 @@
 import Post from '../Post';
 
-export default function Blog(posts){
-    return posts.map(Post).join('');
+export default function Blog(state){
+    return state.posts.map(Post).join('');
 }

@@ -1,4 +1,6 @@
-export default function Footer(){
+import Weather from './Weather';
+
+export default function Footer(state){
     return `
         <div id="footer">
             <h3>External Links</h3>
@@ -20,6 +22,8 @@ export default function Footer(){
                         <i class="fab fa-twitter" style="color: #1DA1F2;">&nbsp;</i>Twitter</a>
                 </li>
             </ul>
+            <h3>Weather</h3>
+            ${Weather(state.weather)}
         </div>
 `;
 }

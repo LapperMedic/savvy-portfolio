@@ -1,7 +1,4 @@
-import {
-    capitalize,
-    kebabCase
-} from 'lodash';
+import { capitalize, kebabCase } from 'lodash';
 
 function Repo(repo){
     return `

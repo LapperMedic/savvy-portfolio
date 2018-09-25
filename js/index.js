@@ -45,7 +45,11 @@ Axios
     });
 
 Axios
-    .get('https://api.github.com/users/lappermedic/repos')
+    .get('https://api.github.com/users/lappermedic/repos', {
+        'headers': {
+            'Authorization': 'token 37776d59345dee2e5bdeb4d0db86097c135358ca'
+        }
+    })
     .then((response) => {
         store.dispatch((state) => {
             state.repos = response.data;
